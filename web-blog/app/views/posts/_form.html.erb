@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :image_post %><br>
-    <%= f.text_field :image_post %>
+    <%= f.file_field :image_post %>
   </div>
   <div class="field">
     <%= f.label "Texto" %><br>
@@ -41,5 +41,5 @@
   <div class="actions">
     <%= f.submit "Salvar", class: "btn btn-success btn-sm" %>
   </div>
-  
+
 <% end %>
