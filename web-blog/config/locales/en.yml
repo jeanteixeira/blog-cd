@@ -18,6 +18,8 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  will_paginate:
+    previous_label: "&#8592; Voltar"
+    next_label: "Avançar &#8594;"
+    page_gap: "&hellip;"

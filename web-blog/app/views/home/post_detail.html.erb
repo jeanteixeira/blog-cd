@@ -1,0 +1,19 @@
+<div class="col-sm-offset-5">
+  <h1><%= @post.title %></h1>
+  <%= @post.subtitle %>
+</div>
+<br>
+<div class="col-sm-offset-5">
+  <%= image_tag(@post.image_post, size:"150x200") %>
+</div>
+<br>
+<div>
+  <%= @post.body_text %>
+</div>
+<br>
+<label>Data da publicação:</label>
+<%= @post.created_at.strftime("%d/%m/%Y") %> <br>
+<label>Autor:</label>
+<%= @post.user.try(:name) %> <br>
+
+<%= link_to "voltar", home_path(), class: "btn btn-primary btn-sm" %>
